@@ -1,0 +1,52 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" version="28.2.3">
+  <diagram name="Trang-1" id="jw6r61Cr27EJ3lXZfheL">
+    <mxGraphModel dx="1426" dy="743" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="8-Potw5b8qgKCtGxHkYA-1" value="&lt;h1&gt;&lt;font style=&quot;font-size: 22px;&quot;&gt;Nhập dữ liệu(Input)&lt;/font&gt;&lt;/h1&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=50;" vertex="1" parent="1">
+          <mxGeometry x="20" y="20" width="380" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="8-Potw5b8qgKCtGxHkYA-4" value="&lt;div style=&quot;&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;-Giáo viên nhập:&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Tên học sinh&amp;nbsp;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Mã số sinh viên&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Điểm giữa học kỳ&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Điểm cuối kỳ&lt;/span&gt;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="8-Potw5b8qgKCtGxHkYA-1">
+          <mxGeometry x="20" y="70" width="340" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="8-Potw5b8qgKCtGxHkYA-9" value="&lt;h1&gt;&lt;span style=&quot;box-sizing: border-box; margin: 0px; padding: 0px; font-family: Arial, sans-serif; text-align: left; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot;&gt;&lt;font style=&quot;font-size: 21px;&quot;&gt;Xử lý dữ liệu (Processing)&lt;/font&gt;&lt;/span&gt;&lt;/h1&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=50;" vertex="1" parent="1">
+          <mxGeometry x="470" y="20" width="350" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="8-Potw5b8qgKCtGxHkYA-12" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Máy tính thực hiện tính toán điểm trung bình môn&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Công thức : Điểm giữa kỳ+(Điểm cuối kỳ x 2)/3&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Nếu điểm trung bình &amp;gt;=8,5(học sinh xếp loại giỏi&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Điểm trung bình môn &amp;lt;8,5(học sinh xếp loại khá)&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Điểm trung bình môn &amp;lt;6,5(học sinh xếp loại trung bình)&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="8-Potw5b8qgKCtGxHkYA-9">
+          <mxGeometry x="15" y="70" width="320" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="8-Potw5b8qgKCtGxHkYA-10" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="240" as="sourcePoint" />
+            <mxPoint x="470" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8-Potw5b8qgKCtGxHkYA-13" value="Lưu trữ (Storage):" style="swimlane;whiteSpace=wrap;html=1;startSize=60;" vertex="1" parent="1">
+          <mxGeometry x="470" y="480" width="350" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="8-Potw5b8qgKCtGxHkYA-15" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Thông tin học sinh và điểm số được lưu trữ trong cơ sở dữ liệu để tra cứu sau này. Đồng thời, hệ thống có cơ chế sao lưu dữ liệu định kỳ để tránh mất mát.&lt;/font&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="8-Potw5b8qgKCtGxHkYA-13">
+          <mxGeometry x="20" y="80" width="310" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="8-Potw5b8qgKCtGxHkYA-14" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="8-Potw5b8qgKCtGxHkYA-9" target="8-Potw5b8qgKCtGxHkYA-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="430" as="sourcePoint" />
+            <mxPoint x="450" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8-Potw5b8qgKCtGxHkYA-17" value="Trình bày kết quả (Output):" style="swimlane;whiteSpace=wrap;html=1;startSize=60;" vertex="1" parent="1">
+          <mxGeometry x="20" y="480" width="380" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="8-Potw5b8qgKCtGxHkYA-18" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&amp;nbsp;Hệ thống hiển thị bảng điểm cho giáo viên và học sinh, cho phép in phiếu báo điểm, xuất file Excel/PDF, hoặc gửi email báo điểm cho phụ huynh.&lt;/font&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="8-Potw5b8qgKCtGxHkYA-17">
+          <mxGeometry x="20" y="90" width="340" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="8-Potw5b8qgKCtGxHkYA-19" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="470" y="680" as="sourcePoint" />
+            <mxPoint x="400" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
